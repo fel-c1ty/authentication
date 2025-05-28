@@ -17,6 +17,7 @@ fetch('https://api.escuelajs.co/api/v1/auth/profile', {
         const userAvatar = document.createElement('img');
         userAvatar.src = data.avatar;
         userAvatar.alt = data.name;
+        userAvatar.classList.add('w-42', 'h-42', 'rounded-full', 'mt-4');
         userInfo.appendChild(userAvatar);
     })
     .catch(error => console.log(error));
